@@ -1,14 +1,18 @@
 //this is the access point for all things database related!
 
-const db = require('./db')
+const db = require('./db');
 
-const User = require('./models/User')
+const Robot = require('./models/Robot');
+const Project = require('./models/Project');
 
 //associations could go here!
+Robot.belongsToMany(Project, { through: 'RobtoProj' });
+Project.belongsToMany(Robot, { through: 'RobtoProj' });
 
 module.exports = {
   db,
   models: {
-    User,
+    Robot,
+    Project,
   },
-}
+};

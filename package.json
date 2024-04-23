@@ -1,5 +1,5 @@
 {
-  "name": "fs-app-template",
+  "name": "jpfp-basic",
   "version": "2.0.0",
   "description": "Some boilerplate code to get you started - get shakin'!",
   "main": "index.js",
@@ -20,6 +20,7 @@
   "author": "Fullstack Academy of Code",
   "license": "MIT",
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
     "bcrypt": "^5.0.0",
     "compression": "^1.7.3",
     "express": "^4.16.4",
@@ -45,11 +46,6 @@
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.4.1",
     "react-test-renderer": "^18.2.0",
-    "redux": "^4.0.1",
-    "redux-devtools-extension": "^2.13.5",
-    "redux-logger": "^3.0.6",
-    "redux-mock-store": "^1.5.3",
-    "redux-thunk": "^2.3.0",
     "supertest": "^4.0.2",
     "webpack": "^5.15.0",
     "webpack-cli": "^4.3.1"
